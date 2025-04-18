@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+                text-align: center;
+            }
+
+            .logo {
+                width: 200px;
+            }
+
+            .search-google {
+                width: 450px;
+                padding-left: 10px;
+                border: none;
+                border-radius: 15px;
+                height: 30px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            }
+
+            .search-google:focus {
+                outline: none;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); /* optional: add custom shadow on focus */
+            }
+
+            .google-search, .feeling {
+                margin-top: 25px;
+                border-style: none;
+                padding: 10px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png" alt="">
+            
+            <div>
+                <input class="search-google" type="text" placeholder="Search Google or type a URL">
+            </div>
+
+            <button class="google-search">Google Search</button>
+            <button class="feeling">I'm Feeling Lucky</button>
+        </div>
+    </body>
+</html>
