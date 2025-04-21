@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .header-bar {
+                height: 30px;
+                background-color: purple;
+                padding: 15px;
+            }
+
+            .component {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .component-home {
+                color: white;
+                font-weight: bold;
+            }
+
+            .component-search {
+                width: 60%;
+                padding: 5px 10px;
+                border-radius: 12px;
+                border-style: none;
+                height: 32px; /* เพิ่ม height เข้าไป */
+                box-sizing: border-box; /* รวม padding เข้า height */
+            }
+
+            .component-btn {
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                padding: 5px 15px; /* ปรับ padding ให้น้อยลง */
+                height: 32px; /* เท่ากับ input */
+                box-sizing: border-box; /* รวม padding เข้า height */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header-bar">
+            <div class="component">
+                <span class="component-home">Home</span>
+                <input type="text" placeholder="Search" class="component-search">
+                <button class="component-btn">Download</button>
+            </div>
+        </div>
+    </body>
+</html>
